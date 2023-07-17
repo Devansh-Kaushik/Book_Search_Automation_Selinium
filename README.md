@@ -90,4 +90,4 @@ We appreciate any contributions, whether it's bug fixes, feature enhancements, o
 
 ## License
 
-This project is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. Please review the license terms and conditions for more information.
+This project is released under the Creative Commons Zero v1.0 Universal license. Please review the license terms and conditions for more information.
