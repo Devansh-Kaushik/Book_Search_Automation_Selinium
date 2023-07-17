@@ -1,4 +1,4 @@
-# Book_Search_Automation
+# Book Search Automation
 
 This project automates the search functionality and validation of book details on an online library shopping website. The goal is to provide a convenient way to retrieve book information, including category and count, and browse books based on subjects. The automation is performed using popular web browsers such as Chrome or Firefox.
 
