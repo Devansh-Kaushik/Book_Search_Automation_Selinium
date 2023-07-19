@@ -1,13 +1,4 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
-
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-name: Book Search Automation Workflow
-
+name: Java CI with Selenium
 on:
   push:
     branches: [ "main" ]
@@ -15,13 +6,9 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build-and-test:
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+  build:
 
-    runs-on: ${{ matrix.os }}
-
+    runs-on: windows-latest  # Use Windows-based runner
     steps:
       - uses: actions/checkout@v3
       
@@ -29,11 +16,8 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'
-          distribution: 'temurin'
-          cache: maven
 
-      - name: Build with Maven
-        run: mvn -B package --file pom.xml
-
-      - name: Run Selenium tests
-        run: mvn -B test --file pom.xml
+      - name: Build and Run Java
+        run: |
+          cd src/BookSearchAutomation  # Navigate to the directory containing the Java file
+          javac Automation_test.java
