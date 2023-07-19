@@ -15,9 +15,9 @@ public class Automation_test extends DriverSetup{
         driver_choice=scanner.nextInt();
         
         System.out.println("Choose an option:");
-        System.out.println("1. Listing Category and Count of Books.");
-        System.out.println("2. Check whether “Tamil” books are available more than one thousand");
-        System.out.println("3. Browsing the books with respective to Subject. Listing Category and Hits for each subcategory.");
+        System.out.println("1. Listing Category and Count of Books");
+        System.out.println("2. Check whether Tamil books are available more than one thousand");
+        System.out.println("3. Browsing the books with respective to Subject. Listing Category and Hits for each subcategory");
 
         do {
             System.out.print("Enter your choice: ");
